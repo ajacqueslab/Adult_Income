@@ -9,6 +9,25 @@ adult_data <- "adult.data"
 if(!file.exists(adult_data))
   unzip(initial_data, adult_data)
 
+if (!require(ggplot2)) install.packages("ggplot2", repos = "http://cran.us.r-project.org")
+if (!require(nnet)) install.packages("nnet", repos = "http://cran.us.r-project.org")
+if (!require(gbm)) install.packages("gbm", repos = "http://cran.us.r-project.org")
+if (!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
+if (!require(caret)) install.packages("caret", repos = "http://cran.us.r-project.org")
+if (!require(glmnet)) install.packages("glmnet", repos = "http://cran.us.r-project.org")
+if (!require(randomForest)) install.packages("randomForest", repos = "http://cran.us.r-project.org")
+if (!require(tinytex)) install.packages("tinytex", repos = "http://cran.us.r-project.org")
+if (!require(tidyr)) install.packages("tidyr", repos = "http://cran.us.r-project.org")
+if (!require(dplyr)) install.packages("dplyr", repos = "http://cran.us.r-project.org")
+if (!require(stats)) install.packages("stats", repos = "http://cran.us.r-project.org")  # base R, usually pre-installed
+if (!require(knitr)) install.packages("knitr", repos = "http://cran.us.r-project.org")
+if (!require(Matrix)) install.packages("Matrix", repos = "http://cran.us.r-project.org")
+if (!require(Metrics)) install.packages("Metrics", repos = "http://cran.us.r-project.org")
+if (!require(data.table)) install.packages("data.table", repos = "http://cran.us.r-project.org")
+if (!require(pROC)) install.packages("pROC", repos = "http://cran.us.r-project.org")
+if (!require(ROCR)) install.packages("ROCR", repos = "http://cran.us.r-project.org")
+if (!require(xgboost)) install.packages("xgboost", repos = "http://cran.us.r-project.org")
+
 # Load libraries
 library(ggplot2)
 library(nnet)
